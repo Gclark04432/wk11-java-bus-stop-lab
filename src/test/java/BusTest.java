@@ -48,4 +48,17 @@ public class BusTest {
         bus.addPassenger(person1);
         assertEquals(false, bus.availableSpace());
     }
+
+    @Test
+    public void willNotAddPassengerBeyondCapacity(){
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        assertEquals(5, bus.passengerCount());
+    }
 }
