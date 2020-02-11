@@ -33,4 +33,8 @@ public class Bus {
     public boolean availableSpace() {
         return this.capacity > this.passengers.size();
     }
+
+    public void removePassenger(Person person) {
+        this.passengers.remove(person);
+    }
 }

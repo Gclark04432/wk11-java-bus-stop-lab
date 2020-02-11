@@ -6,6 +6,7 @@ import static junit.framework.TestCase.assertEquals;
 public class BusTest {
     private Bus bus;
     private Person person1;
+    private Person person2;
 
     @Before
     public void before(){
@@ -60,5 +61,13 @@ public class BusTest {
         bus.addPassenger(person1);
         bus.addPassenger(person1);
         assertEquals(5, bus.passengerCount());
+    }
+
+    @Test
+    public void canRemovePassenger(){
+        bus.addPassenger(person1);
+        bus.addPassenger(person2);
+        bus.removePassenger(person2);
+        assertEquals(1, bus.passengerCount());
     }
 }
