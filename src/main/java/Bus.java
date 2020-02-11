@@ -15,4 +15,16 @@ public class Bus {
     public String getDestination() {
         return this.destination;
     }
+
+    public int checkCapacity() {
+        return this.capacity;
+    }
+
+    public int passengerCount() {
+        return this.passengers.size();
+    }
+
+    public void addPassenger(Person person) {
+        this.passengers.add(person);
+    }
 }
