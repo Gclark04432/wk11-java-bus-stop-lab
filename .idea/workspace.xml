@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cacae84-057d-403c-a7f4-fa801552121e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BusTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BusTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +47,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BusStopTest">
+    <configuration name="BusStopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BusStopLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BusStopTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BusStopLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -63,6 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BusStopTest" />
         <item itemvalue="JUnit.BusTest" />
       </list>
     </recent_temporary>
