@@ -19,7 +19,7 @@ public class BusTest {
 
     @Test
     public void hasCapacity(){
-        assertEquals(100, bus.checkCapacity());
+        assertEquals(5, bus.checkCapacity());
     }
 
     @Test
@@ -31,5 +31,21 @@ public class BusTest {
     public void canAddPassenger(){
         bus.addPassenger(person1);
         assertEquals(1, bus.passengerCount());
+    }
+
+    @Test
+    public void checkIsSpaceForPassenger(){
+        bus.addPassenger(person1);
+        assertEquals(true, bus.availableSpace());
+    }
+
+    @Test
+    public void checkIsNotEnoughSpaceForPassenger(){
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        bus.addPassenger(person1);
+        assertEquals(false, bus.availableSpace());
     }
 }

@@ -7,7 +7,7 @@ public class Bus {
 
     public Bus(String destination){
         this.destination = destination;
-        this.capacity = 100;
+        this.capacity = 5;
         this.passengers = new ArrayList<Person>();
 
     }
@@ -26,5 +26,9 @@ public class Bus {
 
     public void addPassenger(Person person) {
         this.passengers.add(person);
+    }
+
+    public boolean availableSpace() {
+        return this.capacity > this.passengers.size();
     }
 }
