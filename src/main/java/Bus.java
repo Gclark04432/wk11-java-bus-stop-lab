@@ -9,7 +9,6 @@ public class Bus {
         this.destination = destination;
         this.capacity = 5;
         this.passengers = new ArrayList<Person>();
-
     }
 
     public String getDestination() {
@@ -36,5 +35,10 @@ public class Bus {
 
     public void removePassenger(Person person) {
         this.passengers.remove(person);
+    }
+
+    public void pickUp(BusStop busStop){
+        Person person = busStop.removeFromQueue();
+        this.passengers.add(person);
     }
 }
